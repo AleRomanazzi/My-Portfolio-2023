@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dark{
+    background-color: rgba(34, 36, 39, 1);
+}
+
+.dark div span{
+	color: rgba(255, 255, 255, 1);
+	font-size: 82px;
+	font-family: 'Josefin Sans';
+	word-wrap: break-word;
+}
+
+.dark .subtitle{
+	font-family: 'Baloo 2';
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 32px; 
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+.light{
+	background-color: #fff;
+}
+
+.light div span{
+	color: black;
+	font-size: 82px;
+	font-family: 'Josefin Sans';
+	word-wrap: break-word;
+}
+
+.light .subtitle{
+	font-family: 'Baloo 2';
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 32px; 
+	font-weight: 400;
+	word-wrap: break-word;
+	color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+input[type="checkbox"] {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 5rem;
+	height: 2.7rem;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 2rem;
+	height: 2rem;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: rgb(84, 60, 90);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
