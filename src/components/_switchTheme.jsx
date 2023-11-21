@@ -16,7 +16,7 @@ function SwitchTheme({changeTheme}){
                 }
              }
             } />
-            <label htmlFor="switch">Toggle</label>
+            <label className="label" htmlFor="switch">Toggle</label>
         </div>
     )
 }
