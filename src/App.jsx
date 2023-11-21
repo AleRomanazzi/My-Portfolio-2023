@@ -8,10 +8,9 @@ import { useState } from "react"
 function App() {
   
   const [Theme, setTheme] = useState('dark')
-  console.log(Theme);
 
   return (
-    <ThemeContext.Provider>
+    <ThemeContext.Provider value="dark">
       <div className={`container ${Theme}`} >
           <Switch changeTheme={setTheme}/>
           <Title/>
@@ -19,7 +18,7 @@ function App() {
           <div>
             <div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Button text={"Descargar CV"}/>      
+                <Button text={"Descargar CV"} onClick={() => handleButtonClick(false)}/>      
                 <Button text={"Proyectos"}/>     
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
