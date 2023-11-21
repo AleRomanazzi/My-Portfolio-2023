@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from "react";
 import ThemeContext from "./_themeContext";
 
-function Switch({changeTheme}){
+function SwitchTheme({changeTheme}){
 
     const darkMode = useContext(ThemeContext)
     
@@ -21,4 +21,4 @@ function Switch({changeTheme}){
     )
 }
 
-export default Switch
+export default SwitchTheme
