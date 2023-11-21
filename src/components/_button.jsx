@@ -8,9 +8,7 @@ function Button({ text, func }) {
     if(func){
       func();
     }
-    
   };
-
 
   return (
     <>
