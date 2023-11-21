@@ -1,29 +1,17 @@
 import React, {useState} from "react"
 
-function Button({ text }) {
+function Button({ text, func }) {
 
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleButtonClick = (openInNewTab) => {
-    // Ruta relativa al archivo en la carpeta "public"
-    const filePath = '/src/CV_RomanazziAlejandro.pdf';
-  
-    // Construir la URL completa del archivo
-    const fileUrl = window.location.origin + filePath;
-  
-    if (openInNewTab) {
-      // Abrir el PDF en una nueva pestaña
-      window.open(fileUrl, '_blank');
-    } else {
-      // Descargar el PDF
-      const tempLink = document.createElement('a');
-      tempLink.href = fileUrl;
-      tempLink.setAttribute('download', 'CV_RomanazziAlejandro.pdf');
-      document.body.appendChild(tempLink);
-      tempLink.click();
-      document.body.removeChild(tempLink);
+  const handleButtonClick = () => {
+    if(func){
+      func();
     }
+    
   };
+
+
   return (
     <>
     <div style={{
