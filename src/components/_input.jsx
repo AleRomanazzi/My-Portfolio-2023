@@ -14,10 +14,12 @@ const InputContact = ({type, content}) => {
                 borderBottom: "1px solid rgba(84, 60, 90, 1)",
                 borderTop: "0px",
                 borderLeft: "0px",
-                borderRight: "0px"
+                borderRight: "0px",
+                fontSize: "18px",
+                fontFamily: "'Baloo 2'"
             }} 
                 type={type} 
-                name={content}
+                name={content.toLowerCase()}
                 placeholder={content}
                 ></input>
         </div>

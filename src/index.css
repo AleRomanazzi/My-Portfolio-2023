@@ -101,3 +101,37 @@ input:checked + .label:after {
 	width: 130px;
 }
 
+.modal {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 0.8rem 2rem;
+	background-color: rgb(84, 60, 90);
+	color: white;
+	font-family: 'Baloo 2';
+	border-radius: 10px;
+	overflow: hidden;
+  
+	/* Crear una pseudoelemento para la franja verde */
+	&::after {
+	  content: '';
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 2px; /* Altura de la franja verde */
+	  background: linear-gradient(to left, transparent, #00ff00);
+	  animation: gradientAnimation 3s linear forwards;
+	}
+  }
+  
+  /* Animación para mover la franja verde */
+  @keyframes gradientAnimation {
+	from {
+	  width: 100%;
+	}
+	to {
+	  width: 0;
+	}
+  }
+  
