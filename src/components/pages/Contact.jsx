@@ -73,9 +73,9 @@ const Contact = () => {
                         display: "flex", 
                         flexDirection: "row", 
                         fontSize: "20px", 
-                        position: "absolute",
-                        top: "-3rem",
-                        left: "-22rem"
+                        position: "fixed",
+                        top: "3rem",
+                        left: "1.5rem"
                         }}>
                         <img style={{width: '23px', marginRight: "8px"}} src='../src/assets/flecha.png'/>
                         <p>Volver</p>
