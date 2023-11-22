@@ -4,6 +4,7 @@ import SwitchTheme from "../_switchTheme";
 import { useState } from 'react'
 import InputContact from '../_input'
 import Button from "../_button";
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
 
@@ -12,6 +13,21 @@ const Contact = () => {
     return(
         <ThemeContext.Provider value={Theme}>
             <div className={`container ${Theme}` }>
+                <div style={{
+                    display:'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'no-wrap',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    color: 'white',
+                    fontFamily: '"Baloo 2"'
+                }}>
+                    <Link to='/' style={{color: 'white', textDecoration: 'none'}}>
+                        <img style={{width: '23px'}} src='../src/assets/flecha.png'/>
+                        <p>Volver</p>
+                    </Link>
+                    
+                </div>
                 <form style={{
                     padding: '4rem 25rem',
                     border: '2px solid rgba(84, 60, 90, 1)',
@@ -43,9 +59,7 @@ const Contact = () => {
                         <Button text={"Enviar Mensaje"} /> 
                     </div>        
                 </form>
-                <div>
-                    
-                </div>
+
             </div>
         </ThemeContext.Provider>
     )
