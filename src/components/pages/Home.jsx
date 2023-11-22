@@ -46,7 +46,7 @@ function Home() {
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button text="Sobre mí" />
-                <Link to='/contact'>
+                <Link to='/contact' style={{textDecoration: "none"}}>
                   <Button text="Contáctame" />
                 </Link>
               </div>
