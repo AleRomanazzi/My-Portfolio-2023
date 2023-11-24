@@ -135,3 +135,98 @@ input:checked + .label:after {
 	}
   }
   
+.backPage{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: "Baloo 2";
+	position: relative;
+}
+
+.linkBack{
+	color: white; 
+	text-decoration: none; 
+	display: flex; 
+	flex-direction: row; 
+	font-size: 20px; 
+	position: fixed;
+	top: 3rem;
+	left: 1.5rem;
+}
+
+.imgBackPage{
+	width: 23px;
+	margin-right: 8px;
+}
+
+.contactForm{
+	padding: 4rem 25rem;
+	border: 2px solid rgba(84, 60, 90, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.contactFormDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactFormTitle{
+	font-family: "Josefin Sans";
+	color:white;
+}
+
+.contactFormTextArea{
+	font-size: 20px;
+	font-family: "Baloo 2";
+	padding: 2px;
+	background-color: transparent;
+	color: white;
+	margin: 1rem 0;
+	border: 1px solid rgba(84, 60, 90, 1);
+	width: 25rem;
+	height: 10rem;
+}
+
+.img{
+	width: 20rem;
+}
+
+.proyectText{
+	color: white;
+	font-family: "Baloo 2";
+	background-color: rgb(84, 60, 90);
+	padding: 0.5rem;
+}
+
+.proyectTitle{
+	text-align: center;
+	font-size: 24px;
+}
+
+.description{
+	text-align: justify;
+}
+
+.proyectDiv{
+	width: 5rem;
+	height: 2rem;
+}
+
+.github{
+	display: flex;
+	justify-content: center;
+
+}
+
+.github img:hover{
+	width: 28px;
+	height: 28px;
+}

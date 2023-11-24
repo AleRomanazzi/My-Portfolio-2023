@@ -6,7 +6,7 @@ import ThemeContext from "../_themeContext"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Home() {
+const Home = () => {
   
   const [Theme, setTheme] = useState('dark')
 
@@ -42,7 +42,9 @@ function Home() {
             <div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button text="Descargar CV" func={handleDownloadCV} />
-                <Button text="Proyectos" />
+                <Link to='/proyects' style={{textDecoration: "none"}}>
+                  <Button text="Proyectos" />
+                </Link>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button text="Sobre mí" />
