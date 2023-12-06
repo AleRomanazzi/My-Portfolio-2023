@@ -2,7 +2,6 @@ import React from "react";
 
 const ProyectItem = ({ srcImage, title, description, proyectLink }) => {
     return(
-        <div>
             <div className="proyectDiv">
                 <img className="img" src={srcImage}></img>
                 <div className="proyectText">
@@ -13,8 +12,7 @@ const ProyectItem = ({ srcImage, title, description, proyectLink }) => {
                     </a>
                 </div>
             </div>
-        </div>
-    )
+        )
 }
 
 export default ProyectItem

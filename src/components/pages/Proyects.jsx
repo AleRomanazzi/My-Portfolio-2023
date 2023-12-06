@@ -8,14 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Proyects = () => {
     const [Theme, setTheme] = useState('dark')
-
     // Configuración del slider
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: true,
     };
 
     return(
@@ -27,13 +27,18 @@ const Proyects = () => {
                         <p>Volver</p>
                     </Link>
                 </div>
-                <h1 className="contactFormTitle">Proyectos</h1>
-                <Slider {...sliderSettings}>
-                    <ProyectItem srcImage={'../../src/assets/cc11.PNG'} title={'CC11 Cosmeticos con Magia'} description={'Pagina web fronted creada con HTML, CSS.'} proyectLink={'CC11-Cosmeticos-con-Magia'}/>
-                </Slider>
+                <div className="proyects">
+                    <h1 className="contactFormTitle">PROYECTOS</h1>
+                    <Slider {...sliderSettings}>
+                            <ProyectItem srcImage={"../src/assets/subsecretaria.png"} title={"Subsecretaría de Jóvenes Emprendedores"} description={"Primer proyecto hecho con HTML, CSS."} proyectLink={"SubsecretariaDeJovenesEmprendedores"}/>
+                            <ProyectItem srcImage={"../src/assets/comedor.png"} title={"Comedor estudiantil provincial"} proyectLink={"cc11"}/>
+                            <ProyectItem srcImage={"../src/assets/awsss.png"} title={"CC11 Cosmeticos con Magia"} description={"Primer proyecto hecho con HTML, CSS."} proyectLink={"cc11"}/>
+                            <ProyectItem srcImage={"../src/assets/cc11.PNG"} title={"CC11 Cosmeticos con Magia"} description={"Primer proyecto hecho con HTML, CSS."} proyectLink={"cc11"}/>
+                    </Slider>
+                </div>
             </div>
         </ThemeContext.Provider>
-    )
+    );
 }
 
 export default Proyects

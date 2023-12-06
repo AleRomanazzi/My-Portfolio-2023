@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 .dark{
     background-color: rgba(34, 36, 39, 1);
 }
@@ -196,7 +197,8 @@ input:checked + .label:after {
 }
 
 .img{
-	width: 20rem;
+	height: 25rem;
+	width: 100%;
 }
 
 .proyectText{
@@ -215,10 +217,6 @@ input:checked + .label:after {
 	text-align: justify;
 }
 
-.proyectDiv{
-	width: 5rem;
-	height: 2rem;
-}
 
 .github{
 	display: flex;
@@ -229,4 +227,43 @@ input:checked + .label:after {
 .github img:hover{
 	width: 28px;
 	height: 28px;
+}
+
+/* Add this to your CSS file or style block */
+/* Customize as needed */
+
+/* Contenedor del slider con ancho máximo */
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+/* Contenedor del título arriba del slider */
+.slider-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Título del slider */
+.contactFormTitle {
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: white;
+}
+
+
+.proyects{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-list{
+	width: 100vh;
 }
