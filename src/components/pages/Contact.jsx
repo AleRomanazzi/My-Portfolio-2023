@@ -16,7 +16,7 @@ const Contact = () => {
         e.preventDefault();
 
         if(!form.current){
-            console.error('Form no encontrado.');
+            console.error('Form no encon trado.');
             return
         }
   const nombreField = form.current.nombre;
@@ -52,66 +52,27 @@ const Contact = () => {
     const closeModal = () => {
         setShowModal(false);
       };
-    
 
     return(
         <ThemeContext.Provider value={Theme}>
             <div className={`container ${Theme}` }>
-                <div style={{
-                    display:'flex',
-                    flexDirection: 'row',
-                    flexWrap: 'no-wrap',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    color: 'white',
-                    fontFamily: '"Baloo 2"',
-                    position: "relative"
-                }}>
-                    <Link to='/' style={
-                        {color: 'white', 
-                        textDecoration: 'none', 
-                        display: "flex", 
-                        flexDirection: "row", 
-                        fontSize: "20px", 
-                        position: "fixed",
-                        top: "3rem",
-                        left: "1.5rem"
-                        }}>
-                        <img style={{width: '23px', marginRight: "8px"}} src='../src/assets/flecha.png'/>
+                <div className="backPage">
+                    <Link to='/' className="linkBack">
+                        <img className="imgBackPage" src='../src/assets/flecha.png'/>
                         <p>Volver</p>
                     </Link>
-                    
                 </div>
-                <form style={{
-                    padding: '4rem 25rem',
-                    border: '2px solid rgba(84, 60, 90, 1)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}
+                <form className="contactForm"
                  ref={form}
                  onSubmit={sendEmail}
                  method="post">
-                    <div style={{ display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center'}}>
-                        <h1 style={{fontFamily: '"Josefin Sans"',color:"white"}}>CONTACTO</h1>
+                    <div className="contactFormDiv">
+                        <h1 className="contactFormTitle">CONTACTO</h1>
                         <InputContact type={"text"} content={"Nombre"} />
                         <InputContact type={"text"} content={"Asunto"} />
                         <InputContact type={"e-mail"} content={"Email"}/>
                         <textarea 
-                        style={{
-                            fontSize: "20px",
-                            fontFamily: '"Baloo 2"',
-                            padding: "2px",
-                            backgroundColor: "transparent",
-                            color: "white",
-                            margin: "1rem 0",
-                            border: '1px solid rgba(84, 60, 90, 1)',
-                            width: "25rem",
-                            height: "10rem"}} 
+                            className="contactFormTextArea" 
                             name="mensaje" 
                             placeholder="Escriba su mensaje"
                             id="mensaje"
