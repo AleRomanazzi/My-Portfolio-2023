@@ -7,7 +7,7 @@ const ProyectItem = ({ srcImage, title, description, proyectLink }) => {
                 <div className="proyectText">
                     <div className="proyectTitle">{title}</div>
                     <div className="description">{description}</div>
-                    <a className="github" href={`https://github.com/AleRomanazzi/${proyectLink}`} target="_blank">
+                    <a className="github" href={`${proyectLink}`} target="_blank">
                         <img src="../src/assets/github.png" alt="" />
                     </a>
                 </div>
