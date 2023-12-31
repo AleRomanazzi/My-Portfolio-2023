@@ -221,13 +221,8 @@ input:checked + .label:after {
 .github{
 	display: flex;
 	justify-content: center;
-
 }
 
-.github img:hover{
-	width: 28px;
-	height: 28px;
-}
 
 /* Add this to your CSS file or style block */
 /* Customize as needed */
