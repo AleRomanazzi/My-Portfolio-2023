@@ -29,9 +29,7 @@ const Home = () => {
           tempLink.click();
           document.body.removeChild(tempLink);
         }
-    
   }
-
   return (
     <ThemeContext.Provider value={Theme}>
         <div className={`container ${Theme}`}>
@@ -47,7 +45,9 @@ const Home = () => {
                 </Link>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Button text="Sobre mí" />
+                <Link to='/aboutme' style={{textDecoration: "none"}}>
+                  <Button text="Sobre mí" />
+                </Link>
                 <Link to='/contact' style={{textDecoration: "none"}}>
                   <Button text="Contáctame" />
                 </Link>
